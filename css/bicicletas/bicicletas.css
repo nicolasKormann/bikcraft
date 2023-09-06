@@ -1,0 +1,145 @@
+.bicicletas-main {
+  padding-block: 120px;
+}
+
+.bicicletas-bg {
+  background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
+}
+
+.bicicletas-imagem {
+  position: relative;
+}
+
+.bicicletas-imagem span {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  padding: 8px 16px 8px 8px;
+  background: var(--cor-12);
+  border-radius: 4px 0 0 4px;
+}
+
+.bicicletas img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.bicicletas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-block: 60px;
+}
+
+.bicicletas-conteudo {
+  display: grid;
+}
+
+
+.bicicletas-conteudo h2 {
+  margin-bottom: 20px;
+}
+
+.bicicletas-conteudo h2::before {
+  display: block;
+  content: "";
+  width: 12px;
+  height: 8px;
+  background: var(--cor-p1);
+  margin-bottom: 8px;
+  transition: width 200ms;
+}
+
+.bicicletas-conteudo p {
+  margin-bottom: 32px;
+  max-width: 45ch;
+}
+
+.bicicletas-grid-interno {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: flex-end;
+}
+
+.bicicletas-lista-infos li {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 600;
+}
+
+.bicicletas-lista-infos li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.bicicletas-lista-infos img {
+  width: 24px;
+  height: 24px;
+}
+
+.bicicletas-grid-interno a {
+  display: flex;
+  align-items: center;
+  max-width: fit-content;  
+}
+
+.bicicletas-grid-interno a::after {
+  display: inline-block;
+  content: '';
+  width: 18px;
+  height: 10px;
+  background: url(/img/icones/seta.svg);
+  margin-left: 16px;
+  transition: transform 200ms;
+}
+
+.bicicletas-grid-interno a:hover::after {
+  transform: translateX(4px);
+}
+
+@media (width < 850px) {
+  .bicicletas-bg {
+    background: var(--cor-11);
+  }
+
+  .bicicletas-main {
+    padding-block: 60px;
+  }
+  .bicicletas {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-block: 40px;
+  }
+
+  .bicicletas-conteudo h2 {
+    margin-bottom: 10px;
+  }
+
+  .bicicletas-conteudo p {
+    margin-bottom: 16px;
+  }
+
+  .bicicletas-lista-infos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px 0;
+    font-size: 1rem;
+  }
+
+  .bicicletas-grid-interno {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .bicicletas-lista-infos li:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media (width < 420px) {
+  .bicicletas-lista-infos {
+    grid-template-columns: 1fr;
+    gap: 8px 0;
+  }
+}

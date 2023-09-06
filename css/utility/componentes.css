@@ -1,9 +1,11 @@
+/* Container */
 .container {
   max-width: 1200px;
   padding-inline: 20px;
   margin-inline: auto;
 }
 
+/* Botão */
 .botao {
   display: inline-block;
   padding: 16px 32px;
@@ -30,6 +32,7 @@
   }
 }
 
+/* LINK */
 .link {
   display: inline-block;
   font-family: "Poppins", sans-serif;
@@ -52,4 +55,26 @@
 
 .link:hover {
   color: var(--cor-0);
+}
+
+/* Página interna  */
+.titulo-bg {
+  background: var(--cor-11);
+  padding-block: 60px;
+}
+
+.titulo p {
+  margin-bottom: 8px;
+}
+
+@media (width < 800px) {
+  .titulo-bg {
+    padding-block: 40px;
+  }
+
+  .titulo p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
 }

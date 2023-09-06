@@ -18,3 +18,6 @@
 
 /* Bicicletas */
 @import "./seguros/seguros-planos.css";
+
+/* Termos */
+@import "./termos/termos.css";

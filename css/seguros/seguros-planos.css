@@ -1,0 +1,80 @@
+.seguros-bg {
+  background: var(--cor-11);
+  padding-block: 60px 120px;
+}
+
+.seguros-bg h2 {
+  margin-bottom: 60px;
+}
+
+.seguros-planos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.seguros-planos h3 {
+  text-transform: uppercase;
+}
+
+.plano-prata,
+.plano-ouro {
+  background: var(--cor-12);
+  padding: 32px 32px 32px 60px;
+  border-radius: 4px;
+}
+
+.seguros-planos header {
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.seguros-planos .mensal {
+  display: block;
+  text-align: right;
+}
+
+.seguros-planos ul {
+  margin-bottom: 32px;
+}
+
+.seguros-planos li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.seguros-planos li {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.seguros-planos li::before {
+  content: "";
+  width: 13px;
+  height: 9px;
+  background: url("/img/icones/lista.svg") center no-repeat;
+  position: absolute;
+  left: -21px;
+}
+
+.plano-prata a {
+  background: var(--cor-10);
+  color: var(--cor-4);
+}
+
+.plano-prata a:hover {
+  background: var(--cor-9);
+}
+
+@media (width < 800px) {
+  .seguros-bg {
+    padding-block: 60px;
+  }
+
+  .seguros-planos {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

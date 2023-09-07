@@ -60,4 +60,23 @@ header {
     gap: 12px;
     font-size: 0.875rem;
   }
+
+  .header-menu {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (width <= 476px) {
+  .header-container {
+    gap: 32px;
+  }
+  
+  .header-container nav {
+    width: 100%;
+  }
+
+  .header-menu {
+    width: 100%;
+  }
 }

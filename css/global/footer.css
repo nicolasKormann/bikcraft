@@ -16,6 +16,11 @@ footer a {
   line-height: 177.778%;
 }
 
+.footer > a {
+  align-self: flex-start;
+  justify-self: flex-start
+}
+
 footer h2 {
   margin-bottom: 32px;
 }

@@ -1,0 +1,107 @@
+.locais {
+  padding-block: 60px 120px;
+}
+
+.locais h2 {
+  margin-bottom: 60px;
+}
+
+.lojas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.lojas img {
+  border-radius: 4px 4px 0 0;
+}
+
+.loja-rj,
+.loja-sp {
+  background: var(--cor-0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.loja-conteudo {
+  padding: 32px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.loja-conteudo a {
+  font: inherit;
+  color: inherit;
+}
+
+.loja-conteudo a:hover {
+  color: var(--cor-12);
+}
+
+.loja-conteudo h3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.locais h3::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  background: var(--cor-p1);
+  position: absolute;
+  left: -24px;
+}
+
+.lojas-infos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.endereco,
+.lojas-contato {
+  padding-left: 12px;
+  line-height: 200%;
+  border-left: 2px solid var(--cor-2);
+}
+
+.lojas-horario {
+  font-family: "Poppins";
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 142.857%;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.lojas-horario::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(/img/icones/horario.svg);
+  position: absolute;
+  left: -28px;
+}
+
+@media (width < 950px) {
+  .locais h2 {
+    margin-bottom: 32px;
+  }
+
+  .locais {
+    padding-block: 40px 60px;
+  }
+
+  .lojas-infos {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (width < 700px) {
+  .lojas {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,135 @@
+body#contato {
+  background: var(--cor-1);
+}
+
+.contato-pgae-bg {
+  background: linear-gradient(180deg, var(--cor-11) 55%, var(--cor-1) 0 );
+  padding-block: 20px 60px;
+}
+
+.contato-page {
+  display: grid;
+  grid-template-columns: 5fr 8fr;
+}
+
+.contato-page-conteudo {
+  padding: 60px;
+  background: var(--cor-12);
+  border-radius: 4px 0 0 4px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.contato-page-contatos {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contato-page-conteudo h3 {
+  margin-bottom: 60px;
+}
+
+.contato-page-infos {
+  position: relative;
+}
+
+.contato-page-infos a {
+  max-width: max-content;
+}
+
+.contato-page-infos a:hover {
+  color: var(--cor-0);
+}
+
+.contato-page-endereco,
+.contato-page-infos,
+.contato-page-infos :last-child {
+  display: grid;
+  align-items: center;
+  gap: 0 8px;
+  grid-template-columns: max-content auto;
+}
+
+.contato-page-endereco li,
+.contato-page-infos a,
+.contato-page-infos :last-child {
+  grid-column: 2;
+  color: inherit;
+  font: inherit;
+}
+
+.contato-page-endereco::before {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(/img/icones/local.svg);
+}
+
+.contato-page-infos::before {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(/img/icones/email.svg);
+}
+
+.contato-page-infos :last-child {
+  margin-top: 32px;
+}
+
+.contato-page-infos :last-child::before {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(/img/icones/telefone.svg);
+  position: absolute;
+  left: 0;
+}
+
+.contato-page-contatos {
+  margin-bottom: 60px;
+}
+
+.contato-page-redes {
+  display: flex;
+  gap: 32px;
+  margin-left: 28px;
+}
+
+@media (width < 800px) {
+  .contato-page-conteudo,
+  form {
+    padding: 32px 20px;
+  }
+}
+
+@media (width < 700px) {
+  .contato-page {
+    grid-template-columns: 1fr;
+  }
+
+  .contato-page-conteudo {
+    border-radius: 4px 4px 0 0px;
+    box-shadow: none;
+  }
+
+  form {
+    border-radius: 0 0 4px 4px;
+  }
+
+  .contato-page-conteudo h3 {
+    margin-bottom: 40px;
+  }
+
+  .contato-page-contatos {
+    margin-bottom: 40px;
+  }
+
+  .contato-pgae-bg {
+    background: linear-gradient(180deg, var(--cor-11) 30%, var(--cor-1) 0 );
+    padding-block: 20px 30px;
+  }
+  
+}

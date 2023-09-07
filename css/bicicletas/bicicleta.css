@@ -1,0 +1,162 @@
+.bicicleta-bg {
+  background: var(--cor-11);
+  padding-block: 60px;
+}
+
+.bicicleta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.bicicleta-imagens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.bicicleta-imagens :first-child {
+  grid-column: 1 / -1;
+}
+
+.bicicleta-conteudo > p {
+  margin-bottom: 32px;
+}
+
+.bicicleta-grid {
+  display: grid;
+  grid-template-columns: max-content auto;
+  gap: 12px;
+  justify-items: flex-start;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.bicicleta-tag {
+  padding: 4px 8px;
+  background: var(--cor-12);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bicicleta-tag:first-child {
+  margin-bottom: 8px;
+}
+
+.bicicleta h2 {
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
+}
+
+.bicicleta-informacoes,
+.bicicleta-ficha {
+  padding: 32px;
+  background: var(--cor-12);
+  border-radius: 4px;
+}
+
+.bicicleta-informacoes {
+  padding: 32px;
+  background: var(--cor-12);
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.bicicleta-informacoes img {
+  margin-bottom: 4px;
+  width: 24px;
+}
+
+.bicicleta-informacoes span {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.bicicleta-ficha {
+  display: grid;
+  gap: 12px;
+}
+
+.bicicleta-ficha li {
+  font: inherit;
+  color: inherit;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.bicicleta-ficha li:not(:last-child)::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: block;
+  background-color: var(--cor-11);
+  position: absolute;
+  bottom: -7px;
+}
+
+@media (width < 950px) {
+  #bicicleta .titulo p {
+    text-transform: uppercase;
+  }
+
+  .bicicleta {
+    grid-template-columns: 1fr ;
+  }
+
+  .bicicleta-bg {
+    padding-block: 40px;
+  }
+
+  .bicicleta-imagens {
+    grid-row: 2;
+  }
+
+}
+
+/* @media (width < 750px) {
+
+  .bicicleta-imagens {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+  }
+
+  .bicicleta-imagens img {
+    max-width: 280px;
+  }
+} */
+
+@media (width < 460px) {
+  .bicicleta-informacoes {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (width < 400px) {
+  .bicicleta-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .bicicleta-tag:first-child {
+    margin-bottom: 0;
+}
+
+  .bicicleta-tags {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

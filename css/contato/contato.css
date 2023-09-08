@@ -3,7 +3,7 @@ body#contato {
 }
 
 .contato-pgae-bg {
-  background: linear-gradient(180deg, var(--cor-11) 55%, var(--cor-1) 0 );
+  background: linear-gradient(180deg, var(--cor-11) 55%, var(--cor-1) 0);
   padding-block: 20px 60px;
 }
 
@@ -14,7 +14,8 @@ body#contato {
 
 .contato-page-conteudo {
   padding: 60px;
-  background: var(--cor-12);
+  background: var(--cor-12) url("/img//dec/bottom-left.svg") no-repeat bottom
+    20px left 20px;
   border-radius: 4px 0 0 4px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
 }
@@ -111,6 +112,10 @@ body#contato {
   }
 
   .contato-page-conteudo {
+    background: var(--cor-12);
+  }
+
+  .contato-page-conteudo {
     border-radius: 4px 4px 0 0px;
     box-shadow: none;
   }
@@ -128,8 +133,7 @@ body#contato {
   }
 
   .contato-pgae-bg {
-    background: linear-gradient(180deg, var(--cor-11) 30%, var(--cor-1) 0 );
+    background: linear-gradient(180deg, var(--cor-11) 30%, var(--cor-1) 0);
     padding-block: 20px 30px;
   }
-  
 }

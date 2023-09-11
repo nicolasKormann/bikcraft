@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 
 <body id="seguros">
@@ -50,7 +51,7 @@
             <li class="font-2-m cor-0">Suporte 08h às 18h</li>
             <li class="font-2-m cor-0">Cobertura estadual</li>
           </ul>
-          <a class="botao" href="/orcamento.html">Inscreva-se</a>
+          <a class="botao" href="/orcamento.html?tipo=seguro&produto=prata">Inscreva-se</a>
         </div>
 
         <div class="plano-ouro">
@@ -66,7 +67,7 @@
             <li class="font-2-m cor-0">Desconto em parceiros</li>
             <li class="font-2-m cor-0">Acesso ao Clube Bikcraft </li>
           </ul>
-          <a class="botao" href="/orcamento.html">Inscreva-se</a>
+          <a class="botao" href="/orcamento.html?tipo=seguro&produto=ouro">Inscreva-se</a>
         </div>
 
       </div>
@@ -116,32 +117,46 @@
 
     <dl>
       <div>
-        <dt class="font-1-m-b cor-11">Qual forma de pagamento vocês aceitam?</dt>
-        <dd class="font-2-m">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <button aria-controls="pergunta1" aria-expanded="true">
+          <dt class="font-1-m-b cor-11">Qual forma de pagamento vocês aceitam?</dt>
+          <dd id="pergunta1" class="font-2-m ativa">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        </button>
       </div>
       <div>
-        <dt class="font-1-m-b cor-11">Como posso entrar em contato?</dt>
-        <dd class="font-2-m">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <button aria-controls="pergunta2" aria-expanded="false">
+          <dt class="font-1-m-b cor-11">Como posso entrar em contato?</dt>
+          <dd id="pergunta2" class="font-2-m">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        </button>
       </div>
       <div>
-        <dt class="font-1-m-b cor-11">Vocês possuem algum desconto?</dt>
-        <dd class="font-2-m">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <button aria-controls="pergunta3" aria-expanded="false">
+          <dt class="font-1-m-b cor-11">Vocês possuem algum desconto?</dt>
+          <dd id="pergunta3" class="font-2-m">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        </button>
       </div>
       <div>
-        <dt class="font-1-m-b cor-11">Qual a garantia que possuo?</dt>
-        <dd class="font-2-m">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <button aria-controls="pergunta4" aria-expanded="false">
+          <dt class="font-1-m-b cor-11">Qual a garantia que possuo?</dt>
+          <dd id="pergunta4" class="font-2-m">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        </button>
       </div>
       <div>
-        <dt class="font-1-m-b cor-11">Posso parcelar no boleto?</dt>
-        <dd class="font-2-m">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <button aria-controls="pergunta5" aria-expanded="false">
+          <dt class="font-1-m-b cor-11">Posso parcelar no boleto?</dt>
+          <dd id="pergunta5" class="font-2-m">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        </button>
       </div>
       <div>
-        <dt class="font-1-m-b cor-11">Qaantas trocas posso fazer ao ano?</dt>
-        <dd class="font-2-m">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <button aria-controls="pergunta6" aria-expanded="false">
+          <dt class="font-1-m-b cor-11">Quantas trocas posso fazer ao ano?</dt>
+          <dd id="pergunta6" class="font-2-m">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        </button>
       </div>
       <div>
-        <dt class="font-1-m-b cor-11">Qual Bikcraft devo escolher para o meu tamanho?</dt>
-        <dd class="font-2-m">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <button aria-controls="pergunta7" aria-expanded="false">
+          <dt class="font-1-m-b cor-11">Qual Bikcraft devo escolher para o meu tamanho?</dt>
+          <dd id="pergunta7" class="font-2-m">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        </button>
       </div>
 
     </dl>
@@ -180,6 +195,7 @@
       <p class="footer-copy font-2-m cor-5">Bikcraft © Alguns direitos reservados.</p>
     </div>
   </footer>
+  <script src="js/scrip.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,22 @@
+html.js .fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+html.js .fadeInUp {
+  transform: translate3d(0, -100%, 0);
+}
+html.js .fadeInRight {
+  transform: translate3d(100%, 0, 0);
+}
+html.js .fadeInLeft {
+  transform: translate3d(-100%, 0, 0);
+}
+
+html.js [data-anime] {
+  opacity: 0;
+}
+
+html.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: transform 0.8s, opacity 0.8s;
+}

@@ -15,7 +15,7 @@
 .depoimento-conteudo {
   align-self: end;
   padding: 80px;
-  background: url('../../img/dec/bottom-right-p.svg') no-repeat bottom 40px right 40px;
+  background: url('../img/dec/bottom-right-p.svg') no-repeat bottom 40px right 40px;
 }
 
 .depoimento-conteudo blockquote {

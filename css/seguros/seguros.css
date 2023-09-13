@@ -54,7 +54,7 @@
   content: "";
   width: 13px;
   height: 9px;
-  background: url("../../img/icones/lista.svg") center no-repeat;
+  background: url("../img/icones/lista.svg") center no-repeat;
   position: absolute;
   left: -21px;
 }

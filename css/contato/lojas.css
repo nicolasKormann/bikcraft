@@ -80,7 +80,7 @@
   content: "";
   width: 20px;
   height: 20px;
-  background: url(/img/icones/horario.svg);
+  background: url("../../img/icones/horario.svg");
   position: absolute;
   left: -28px;
 }

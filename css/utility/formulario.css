@@ -3,7 +3,7 @@
   display: grid;
   align-content: flex-start;
   gap: 20px;
-  background: var(--cor-0) url("/img//dec/bottom-right.svg") no-repeat bottom
+  background: var(--cor-0) url("../../img//dec/bottom-right.svg") no-repeat bottom
     20px right 20px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
   border-radius: 0 4px 4px 0;

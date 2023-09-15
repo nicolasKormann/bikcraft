@@ -14,7 +14,7 @@ Welcome to the Bikcraft website repository, your one-stop shop for electric bicy
 ## 🛠 Technologies Used
 
 - HTML
-- CSS (Grid Layout)
+- CSS
 - JavaScript
   
 ## ✨ Features
